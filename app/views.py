@@ -1,7 +1,8 @@
+from flask import render_template, request, redirect, url_for
+
 from app import app
-from flask import render_template, request, redirect, url_for, flash, make_response, session
-from .models import Book, Author, Genre, PublishHouse, db
 from .forms import BookForm, AuthorForm, PublishHouseForm
+from .models import Book, Author, Genre, PublishHouse, db
 
 
 @app.route('/')
